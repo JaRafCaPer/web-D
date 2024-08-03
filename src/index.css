@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Agregar estilos personalizados aquí */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #f5f5dc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans', sans-serif;
+  color: #0060a2;
+}
+
+p {
+  font-family: 'Noto Sans Serif', serif;
+  color: #000000;
+}
