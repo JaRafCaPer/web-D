@@ -13,8 +13,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Sans', sans-serif;
   color: #0060a2;
 }
+.title {
+  font-size: 2.75rem;
+}
 h1 {
   font-size: 2.5rem;
+  text-align: center;
 }
 h2 {
   font-size: 2rem;
@@ -32,7 +36,9 @@ p {
 }
 @media (max-width: 1024px) {
 
-  
+  .title {
+    font-size: 2.5rem;
+  }
   h1 {
     font-size: 2.25rem;
   }
@@ -48,13 +54,15 @@ p {
   p {
     font-family: 'Noto Sans Serif', serif;
     color: #000000;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
 }
 @media (max-width: 768px) {
 
-  
+  .title {
+    font-size: 2.25rem;
+  }
   h1 {
     font-size: 2rem;
   }
@@ -70,7 +78,7 @@ p {
   p {
     font-family: 'Noto Sans Serif', serif;
     color: #000000;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
 }

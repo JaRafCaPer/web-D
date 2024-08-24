@@ -51,16 +51,18 @@ function ImageCarousel() {
       >
         {images.map((image, index) => (
           <div
-            className="w-full md:w-1/2 flex-shrink-0 px-2 transition-transform transform ease-in-out duration-300"
-            key={index}
-            style={{ flexBasis: `${100 / images.length}%` }} // Ensure each image gets equal width
-          >
-            <img
-              src={image}
-              alt={`Slide ${index}`}
-              className="w-full h-full object-contain"
-            />
-          </div>
+          className="w-full md:w-1/2 flex-shrink-0 px-2 transition-transform transform ease-in-out duration-300"
+          key={index}
+          style={{ flexBasis: `${100 / images.length}%` }} // Ensure each image gets equal width
+        >
+          <img
+            src={image}
+            alt={`Slide ${index}`}
+            className="w-full h-full object-contain"
+          />
+          
+        </div>
+          
         ))}
       </div>
       <button

@@ -7,9 +7,9 @@ function Navbar() {
 
     return (
         <>
-            <nav className="bg-white shadow-lg fixed w-full z-50">
+            <nav className="navBar1 bg-white shadow-lg  w-full z-50">
                 <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-8">
-                    <Link to="/" className="text-xl md:text-2xl font-bold text-metlifeBlue">Denko Swoboda</Link>
+                    <Link to="/" className="title font-bold text-metlifeBlue">Denko Swoboda</Link>
                     <button 
                         className=" text-metlifeBlue text-3xl md:text-4xl" 
                         onClick={() => setIsMenuOpen(true)}>
