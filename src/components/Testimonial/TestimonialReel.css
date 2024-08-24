@@ -1,0 +1,88 @@
+/* TestimonialCarousel.css */
+.carousel {
+    position: relative;
+    width: 100%;
+    
+    margin: auto;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.carousel-inner {
+    padding: 20px;
+    background: #f9f9f9;
+    gap: 20px; 
+    display: flex;
+    flex-direction: row;
+}
+.testimonial-slide {
+    width: 20%; 
+    height: 350px;
+    margin: auto;
+    background-color: #ebf1f5;
+}
+.testimonial-img {
+    width: 100%; 
+    height: auto;
+    border-radius: 30%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2rem; 
+}
+
+p {
+    font-size: 1rem; 
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #0060A2;
+    cursor: pointer;
+}
+
+/* Buttons position for smaller screens */
+.carousel-btn.left {
+    left: 5px;
+}
+
+.carousel-btn.right {
+    right: 5px;
+}
+
+@media (max-width: 768px) {
+    .testimonial-img {
+        width: 60px; /* Smaller image size for tablets */
+        height: 60px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-img {
+        width: 50px; /* Smaller image size for mobile */
+        height: 50px;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}

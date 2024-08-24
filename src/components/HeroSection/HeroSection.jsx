@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageCarousel from '../ImageCarousel/ImageCarousel';
+import './HeroSection.css';
 
 function HeroSection() {
     return (
