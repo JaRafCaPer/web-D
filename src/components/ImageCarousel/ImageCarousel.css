@@ -1,28 +1,17 @@
-.slick-slide img {
-    width: 100%;  
-    height: 1000px; 
-    object-fit:fill;
-    object-position: top;
+.imgCarous {
+margin-top: 100px;
+margin-bottom: 30px;
 }
-.slick-prev, .slick-next {
-    display: none;
-}
-/* For tablets */
-@media (max-width: 640px) {
-    .slick-slide img {
-        height: 300px;
-    }
-    .slick-prev, .slick-next {
-        display: none;
+
+@media (max-width: 1024px) {
+    .imgCarous {
+        margin-top: 50px;
     }
 }
 
-/* For larger screens (desktops and tablets in landscape) */
-@media (max-width: 1024px) {
-    .slick-slide img {
-        height: 400px;
-    }
-    .slick-prev, .slick-next {
-        display: none;
+@media (max-width: 768px) {
+    .imgCarous {
+        margin-top: 90px;
+        margin-bottom: 20px;
     }
 }
