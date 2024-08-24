@@ -2,41 +2,57 @@
 .carousel {
     position: relative;
     width: 100%;
-    
-    margin: auto;
-    text-align: center;
     margin: 20px auto;
+    text-align: center;
 }
 
 .carousel-inner {
     padding: 20px;
     background: #f9f9f9;
-    gap: 20px; 
+    gap: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
+
+/* Testimonial Slide */
 .testimonial-slide {
-    width: 20%; 
-    height: 350px;
+    width: 25%; /* Default for larger screens */
+    height: 450px;
     margin: auto;
-    background-color: #ebf1f5;
+    box-shadow: #313130 0px 0px 10px;
+    border-radius: 10%;
 }
+.testimonial-slide2 {
+    width: 25%; /* Default for larger screens */
+    height: 450px;
+    margin: auto;
+    box-shadow: #313130 0px 0px 10px;
+    border-radius: 10%;
+}
+
+/* Image Styling */
 .testimonial-img {
-    width: 100%; 
+    width: 100%;
     height: auto;
-    border-radius: 30%;
+    border-radius: 10%;
     object-fit: cover;
     margin-bottom: 20px;
 }
 
+/* Text Styling */
 h3 {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0060A2;
 }
 
 p {
-    font-size: 1rem; 
+    font-size: 1rem;
+    font-weight: 100;
 }
 
+/* Carousel Buttons */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -48,7 +64,6 @@ p {
     cursor: pointer;
 }
 
-/* Buttons position for smaller screens */
 .carousel-btn.left {
     left: 5px;
 }
@@ -57,10 +72,21 @@ p {
     right: 5px;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .testimonial-slide {
+        width: 40%; /* Two slides side by side on smaller screens */
+    }
+}
+
 @media (max-width: 768px) {
-    .testimonial-img {
-        width: 60px; /* Smaller image size for tablets */
-        height: 60px;
+    .carousel-inner {
+        flex-direction: column;
+    }
+
+    .testimonial-slide {
+        width: 80%; /* One slide per view on tablet */
+        height: auto;
     }
 
     h3 {
@@ -73,11 +99,19 @@ p {
 }
 
 @media (max-width: 480px) {
-    .testimonial-img {
-        width: 50px; /* Smaller image size for mobile */
-        height: 50px;
+    .testimonial-slide {
+        width: 100%; /* Full width on mobile */
+        height: 375px;
     }
 
+    .testimonial-img {
+        width: 100%; 
+        height: 250px;
+    }
+
+    .testimonial-slide2 {
+        display: none;
+    }
     h3 {
         font-size: 0.9rem;
     }

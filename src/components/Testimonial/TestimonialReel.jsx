@@ -1,4 +1,3 @@
-// src/components/TestimonialCarousel/TestimonialCarousel.jsx
 import React, { useState } from 'react';
 import img1 from '../../assets/images/FJPL0371.jpg';
 import img2 from '../../assets/images/FJPL0374.jpg';
@@ -31,28 +30,36 @@ function TestimonialCarousel() {
     };
 
     return (
-        <div className="carousel bg-metlifeBlue ">
-            <div className="carousel-inner ">
-            <div className="testimonial-slide">
-                    <img src={testimonials[currentSlide].photo} alt={testimonials[currentSlide].name} className="testimonial-img" />
-                    <h3>{testimonials[currentSlide].name}</h3>
-                    <p>{testimonials[currentSlide].feedback}</p>
-                </div><div className="testimonial-slide">
-                    <img src={testimonials[currentSlide].photo} alt={testimonials[currentSlide].name} className="testimonial-img" />
-                    <h3>{testimonials[currentSlide].name}</h3>
-                    <p>{testimonials[currentSlide].feedback}</p>
-                </div>
+        <div className="carousel bg-metlifeBlue">
+            <div className="carousel-inner">
                 <div className="testimonial-slide">
                     <img src={testimonials[currentSlide].photo} alt={testimonials[currentSlide].name} className="testimonial-img" />
-                    <h3>{testimonials[currentSlide].name}</h3>
-                    <p>{testimonials[currentSlide].feedback}</p>
+                    <h3 className="testName">{testimonials[currentSlide].name}</h3>
+                    <p className="testP">{testimonials[currentSlide].feedback}</p>
                 </div>
-                <div className="testimonial-slide">
-                    <img src={testimonials[(currentSlide + 1) % testimonials.length].photo} alt={testimonials[(currentSlide + 1) % testimonials.length].name} className="testimonial-img" />
-                    <h3>{testimonials[(currentSlide + 1) % testimonials.length].name}</h3>
-                    <p>{testimonials[(currentSlide + 1) % testimonials.length].feedback}</p>
+
+                {/* Render next two slides with boundary checks */}
+                <div className="testimonial-slide2">
+                    <img
+                        src={testimonials[(currentSlide + 1) % testimonials.length].photo}
+                        alt={testimonials[(currentSlide + 1) % testimonials.length].name}
+                        className="testimonial-img"
+                    />
+                    <h3 className="testName">{testimonials[(currentSlide + 1) % testimonials.length].name}</h3>
+                    <p className="testP">{testimonials[(currentSlide + 1) % testimonials.length].feedback}</p>
+                </div>
+
+                <div className="testimonial-slide2">
+                    <img
+                        src={testimonials[(currentSlide + 2) % testimonials.length].photo}
+                        alt={testimonials[(currentSlide + 2) % testimonials.length].name}
+                        className="testimonial-img"
+                    />
+                    <h3 className="testName">{testimonials[(currentSlide + 2) % testimonials.length].name}</h3>
+                    <p className="testP">{testimonials[(currentSlide + 2) % testimonials.length].feedback}</p>
                 </div>
             </div>
+
             <button onClick={prevSlide} className="carousel-btn left">❮</button>
             <button onClick={nextSlide} className="carousel-btn right">❯</button>
         </div>

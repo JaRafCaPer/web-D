@@ -7,12 +7,27 @@ body {
   font-family: 'Noto Sans', sans-serif;
   
 }
+p {
+  font-family: 'Noto Sans Serif', serif;
+  font-size: 1rem;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Sans', sans-serif;
   color: #0060a2;
 }
-
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
 p {
   font-family: 'Noto Sans Serif', serif;
   color: #000000;
