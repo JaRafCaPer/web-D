@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        metlifeBlue1: "#008edd",
-        metlifeBlue2: "#0060a2",
-        metlifeGreen: "#a3d043",
+        metlifeBlue: '#00B0DD', // Bright blue
+        metlifeDarkBlue: '#0060A2', // Dark blue
+        metlifeGreen: '#A3D043' , // Bright green
         black: "#000000",
         white: "#ffffff",
         beige: "#f5f5dc",

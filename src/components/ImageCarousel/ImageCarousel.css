@@ -1,0 +1,6 @@
+.slick-slide img {
+    width: 100%;  
+    height: 900px; 
+    object-fit:fill;
+    object-position: top;
+}

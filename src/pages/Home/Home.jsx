@@ -1,12 +1,18 @@
 import React from 'react';
+import HeroSection from '../../components/HeroSection/HeroSection';
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/footer.jsx';
 
-const Home = () => {
-  return (
-    <div className="home">
-      <h1>Bienvenido a mi página web!</h1>
-      <p>Soy Denko Swoboda, abogado consultor en seguros.</p>
-    </div>
-  );
-};
+function Home() {
+    return (
+        <>
+            <Navbar />
+            <HeroSection />
+            
+
+            <Footer />
+        </>
+    );
+}
 
 export default Home;
