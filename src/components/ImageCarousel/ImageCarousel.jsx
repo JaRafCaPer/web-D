@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import img1 from '../../assets/images/FJPL0371.jpg';
 import img2 from '../../assets/images/FJPL0374.jpg';
 import img3 from '../../assets/images/FJPL0410.jpg';
-import img4 from '../../assets/images/photo4.jpg';
+import img4 from '../../assets/images/FJPL0485.jpg';
 import img5 from '../../assets/images/FJPL0465.jpg';
 import img6 from '../../assets/images/FJPL0549.jpg';
 import img7 from '../../assets/images/FJPL0573.jpg';
