@@ -1,16 +1,13 @@
 import React from 'react';
 import './Home.css';
-import ImageCarousel from '../../components/ImageCarousel/ImageCarousel';
 import HeroSection from '../../components/HeroSection/HeroSection';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/footer.jsx';
 import TestimonialCarousel from '../../components/Testimonial/TestimonialReel.jsx';
 import denkoImage from '../../assets/images/armCrossed.png'; 
+
 
 function Home() {
   return (
     <>
-      <Navbar />
       <div className="parent">
         <div className="div1">
             <div>
@@ -28,8 +25,8 @@ function Home() {
         </div>
       </div>
       <HeroSection />
+      
       <TestimonialCarousel />
-      <Footer />
     </>
   );
 }
