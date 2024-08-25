@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedinIn, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedinIn, faGoogle, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
     return (
@@ -25,6 +25,9 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="flex justify-center md:justify-start md:mt-0 mt-8 space-x-4">
+                    <a href="https://wa.me/573001608866" className="hover:text-metlifeGreen">
+                        <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+                    </a>
                     <a href="https://www.instagram.com/denkoswoboda/" className="hover:text-metlifeGreen">
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </a>

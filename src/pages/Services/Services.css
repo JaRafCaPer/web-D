@@ -62,6 +62,10 @@
         height: auto;
         margin: 4%;
     }
+    .div1s p {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     .img1s {
         width: 100%;

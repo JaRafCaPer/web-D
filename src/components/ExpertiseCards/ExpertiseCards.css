@@ -1,0 +1,28 @@
+.expertise-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.expertise-card {
+    background-color: #00B0DD;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.expertise-card:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    margin-bottom: 15px;
+    color: #A3D043;
+}
+
+@media (max-width: 768px) {
+    .expertise-cards-container {
+        grid-template-columns: 1fr;
+    }
+}

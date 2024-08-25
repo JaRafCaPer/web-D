@@ -32,7 +32,7 @@ function Navbar() {
                 </button>
                 <ul className="flex flex-col items-start p-4 space-y-4">
                     <li><Link to="/" className="text-xl text-gray-700 hover:text-metlifeBlue" onClick={() => setIsMenuOpen(false)}>Inicio</Link></li>
-                    <li><Link to="/about" className="text-xl text-gray-700 hover:text-metlifeBlue" onClick={() => setIsMenuOpen(false)}>Nosotros</Link></li>
+                    <li><Link to="/about" className="text-xl text-gray-700 hover:text-metlifeBlue" onClick={() => setIsMenuOpen(false)}>Sobre Mí</Link></li>
                     <li><Link to="/services" className="text-xl text-gray-700 hover:text-metlifeBlue" onClick={() => setIsMenuOpen(false)}>Servicios</Link></li>
                     <li><Link to="/contact" className="text-xl text-gray-700 hover:text-metlifeBlue" onClick={() => setIsMenuOpen(false)}>Contacto</Link></li>
                 </ul>
