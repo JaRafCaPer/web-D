@@ -7,17 +7,17 @@ function ExpertiseCards() {
     {
       title: "Derecho de Seguros",
       description: "Asesoría completa en la evaluación, contratación y gestión de seguros de vida, salud, patrimonio y educación.",
-      icon: <ShieldCheck size={40} />
+      icon: <ShieldCheck size={50} />
     },
     {
       title: "Derecho Administrativo",
       description: "Especialización en aspectos legales que rigen la contratación y gestión de seguros, asegurando que siempre estén dentro del marco legal adecuado.",
-      icon: <Briefcase size={40} />
+      icon: <Briefcase size={50} />
     },
     {
       title: "Consultoría Actuarial",
       description: "Evaluación de riesgos y desarrollo de estrategias para reducir su impacto, garantizando estabilidad financiera a largo plazo.",
-      icon: <BarChart size={40} />
+      icon: <BarChart size={50} />
     }
   ];
 

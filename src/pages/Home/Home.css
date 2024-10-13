@@ -35,6 +35,36 @@
     border-radius: 10px;
     box-shadow: grey 5px 5px 5px 5px;
   }
+  .div3 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    
+  }
+  .div3 img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: grey 5px 5px 5px 5px;
+  }
+  .subDiv3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width:150%;
+    ;
+  }
+  .pieFoto {
+    font-size: xx-small;
+    margin-left: 2%;
+  }
+  .formulario {
+    margin-right: 20%;
+  }
   
   @media (max-width: 768px) {
     .parent {
@@ -54,6 +84,16 @@
     .div2 {
       grid-area: 2 / 1 / 3 / 2;
       margin: 0px 10% 40px
+    }
+    .div3 {
+      display: flex;
+      flex-direction: column;
+    }
+    .subDiv3 {
+   
+      margin: 0;
+      width:125%;
+      ;
     }
   }
   

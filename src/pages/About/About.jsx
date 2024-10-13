@@ -41,24 +41,14 @@ function About() {
         <p className="mb-6">
           Estoy aquí para guiarte en cada paso de tu planificación financiera y legal. Juntos podemos crear estrategias efectivas que garanticen la seguridad de tu familia y tu patrimonio.
         </p>
-        <a
-          href="https://wa.me/573001608866"
-          className="whatsapp-btn bg-metlifeBlue px-6 py-3 rounded-lg hover:bg-metlifeBlue"
-        >
-          WhatsApp
-        </a>
       </div>
       <div className="values-section  py-12 text-center">
         <h3 className="font-bold mb-4">Áreas de Expertise</h3>
         <ExpertiseCards />
       </div>
-      <div className="image-carousel py-12 ">
+      <div className="image-carousel">
         <ImageCarousel />
       </div>
-
-     
-
-      
     </>
   );
 }

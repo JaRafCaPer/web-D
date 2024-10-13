@@ -7,6 +7,7 @@ import Contact from '../pages/Contact/Contact';
 import Expertise from '../pages/Expertise/Expertise';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/footer';
+import WhatsAppButton from '../components/WhatsappButton/WhatsappButon';
 
 const AppRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const AppRoutes = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/expertise" element={<Expertise />} />
       </Routes>
+      <WhatsAppButton />
       <Footer />
     </Router>
    

@@ -3,6 +3,10 @@ import './Home.css';
 import HeroSection from '../../components/HeroSection/HeroSection';
 import TestimonialCarousel from '../../components/Testimonial/TestimonialReel.jsx';
 import denkoImage from '../../assets/images/armCrossed.png'; 
+import familyImage from '../../assets/images/pexels-liam-anderson-411198-2120220.jpg';
+import Form from '../../components/Form/ContactForm';
+import ServicesCards from '../../components/ServicesCards/ServicesCards';
+
 
 
 function Home() {
@@ -25,8 +29,15 @@ function Home() {
         </div>
       </div>
       <HeroSection />
-      
+      <ServicesCards/>
       <TestimonialCarousel />
+      <div className="div3">
+        <div className='subDiv3'>
+        <img src={familyImage} alt="" />
+        <p className='pieFoto'>Foto de Liam Anderson</p>
+        </div>
+        <Form className="Formulario" />
+      </div> 
     </>
   );
 }
