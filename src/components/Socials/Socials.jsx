@@ -16,7 +16,7 @@ function Socials() {
                     <a href="https://www.linkedin.com/in/miroslav-swoboda-865a74193/" className="hover:text-metlifeGreen">
                         <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
                     </a>
-                    <a href="mailto:miroslav.s.swoboda@metlife.com.co" className="hover:text-metlifeGreen">
+                    <a href="mailto:miroslav.swoboda@gmail.com" className="hover:text-metlifeGreen">
                         <FontAwesomeIcon icon={faGoogle} size="2x" />
                     </a>
                 </div>

@@ -11,7 +11,7 @@ function Footer() {
                     <p className="text-metlifeBlue">Protege lo que más valoras.</p>
                     <div>
                         <h3 className="text-lg font-bold mb-4">Contacto</h3>
-                        <p className="text-metlifeBlue">Email: miroslav.s.swoboda@metlife.com.co</p>
+                        <p className="text-metlifeBlue">Email: miroslav.swoboda@gmail.com</p>
                         <p className="text-metlifeBlue">Teléfono: +57 3001608866</p>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ function Footer() {
                     <a href="https://www.linkedin.com/in/miroslav-swoboda-865a74193/" className="hover:text-metlifeGreen">
                         <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
                     </a>
-                    <a href="mailto:miroslav.s.swoboda@metlife.com.co" className="hover:text-metlifeGreen">
+                    <a href="mailto:miroslav.swoboda@gmail.com" className="hover:text-metlifeGreen">
                         <FontAwesomeIcon icon={faGoogle} size="2x" />
                     </a>
                 </div>
