@@ -1,4 +1,3 @@
-// src/components/Modal/Modal.jsx
 import React, { useState } from "react";
 import "./Modal.css";
 
@@ -15,7 +14,7 @@ function Modal({ title, content }) {
         onClick={toggleModal}
         className="learn-more-btn bg-metlifeGreen text-white px-4 py-2 rounded-lg hover:bg-metlifeDarkBlue transition-colors"
       >
-        Learn More
+      <p className="modalText text-white">Mas Información</p>
       </button>
       {isOpen && (
         <div className="modal-overlay">
@@ -28,7 +27,7 @@ function Modal({ title, content }) {
               onClick={toggleModal}
               className="close-modal-btn bg-metlifeDarkBlue text-white px-4 py-2 rounded-lg mt-4 hover:bg-metlifeBlue"
             >
-              Close
+            <p className="modalText text-white">Cerrar</p>
             </button>
           </div>
         </div>

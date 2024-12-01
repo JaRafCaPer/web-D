@@ -1,45 +1,45 @@
+.aboutBody {
+  background-image: url("../../assets/images/texture.svg");
+  
+}
+
 .about-grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   align-items: start;
-  margin: 5%;
+  margin: 2%;
   width: 100%;
+  
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
-  margin: 0% 10%;
-  width: 50vw;
+  margin: 0% 8vw;
+  width: 35vw;
 }
 
 .about-image {
-  display: flex;
+  
   justify-content: center;
-  align-items: start;
-  width: 55%;
-  margin: 0 20%;
+  align-items: center;
+  width: 50%;
+  margin: 0 5vw;
 }
 
-.profile-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
 
 .about-container {
   max-width: auto;
   margin: 0 auto;
-
   text-align: center;
 }
 
 .profile-img {
-  width: 100%;
+  width: 50vw;
   max-width: 500px;
   height: auto;
-  margin: 0 auto 20px;
+  margin: 0 ;
 }
 
 h2 {
@@ -54,24 +54,31 @@ p {
 .values-section,
 .cta-section {
   height: auto;
-  width: 85%;
+  width: 80%;
   align-items: center;
   justify-content: center;
   padding: 20px 0;
-  margin: 0 auto;
+  margin: auto;
   border-radius: 10px;
+}
+
+.cta-section p {
+  margin: 20px;
+  text-align: center;
 }
 
 .values-section h3,
 .cta-section h3 {
   margin-bottom: 20px;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
 .image-carousel {
-  margin: 0 10%;
+  margin: 20px 10%; 
 }
 
 @media (max-width: 768px) {
@@ -83,37 +90,49 @@ p {
 
   .about-text {
     text-align: center;
-    margin: 10%;
+    margin: 5%;
     width: auto;
   }
 
   .about-image {
-    margin: 10%;
+    margin: auto;
     width: auto;
   }
+.profile-img {
+  width: 90vw;
+  max-width: 400px;
+  height: auto;
+  
+}
 
+  .values-section {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
   .grid {
     grid-template-columns: 1fr;
   }
 
-  h2 {
-  }
-
-  p {
-  }
-
   .cta-section {
-    margin: 0%;
+    align-items: center;  
+    text-align: center;
+    width: 100%;
+    padding: 0%;
+
+  }
+
+  .icon {
+    align-items: center;
+    text-align: center;
+
   }
 
   .image-carousel {
     width: 100%;
-    height: 80%;
-    margin: 0%;
+    height: auto;
+    margin: 0;
+    margin-top: 0px ;
   }
-
-  .values-section,
-  .cta-section {
-    padding: 30px 15px;
-  }
+  
 }

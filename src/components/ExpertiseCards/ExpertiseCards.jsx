@@ -1,5 +1,5 @@
 import React from "react";
-import { Briefcase, ShieldCheck, BarChart } from "react-bootstrap-icons"; // Sample icons
+import { Briefcase, ShieldCheck, BarChart } from "react-bootstrap-icons"; 
 import "./ExpertiseCards.css";
 
 function ExpertiseCards() {
@@ -25,11 +25,11 @@ function ExpertiseCards() {
   ];
 
   return (
-    <div className="expertise-cards-container grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-lg mx-auto py-12">
+    <div className="expertise-cards-container ">
       {expertise.map((item, index) => (
         <div
           key={index}
-          className="expertise-card  text-white p-6 rounded-lg shadow-lg text-center"
+          className="expertise-card p-6 rounded-lg shadow-lg text-center"
         >
           <div className="icon mb-4">{item.icon}</div>
           <h4 className="font-bold mb-2">{item.title}</h4>

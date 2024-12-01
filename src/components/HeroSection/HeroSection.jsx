@@ -11,9 +11,9 @@ function HeroSection() {
         </h3>
         <a
           href="/services"
-          className="btns bg-metlifeGreen text-white px-6 py-3 rounded-lg hover:bg-metlifeDarkBlue"
+          className="btns bg-metlifeGreen  px-6 py-3 rounded-lg hover:bg-metlifeDarkBlue"
         >
-          Ver Servicios
+          <p className="text-white">Ver Servicios</p>
         </a>
       </div>
     </div>

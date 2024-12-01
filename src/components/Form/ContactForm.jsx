@@ -35,7 +35,7 @@ function ContactForm() {
             htmlFor="name"
             className="block text-sm font-medium text-gray-700"
           >
-            Nombre
+          <p className="text-metlifeBlue">Nombre</p>
           </label>
           <input
             type="text"
@@ -52,7 +52,7 @@ function ContactForm() {
             htmlFor="email"
             className="block text-sm font-medium text-gray-700"
           >
-            Email
+            <p className="text-metlifeBlue">Email</p>
           </label>
           <input
             type="email"
@@ -69,7 +69,7 @@ function ContactForm() {
             htmlFor="message"
             className="block text-sm font-medium text-gray-700"
           >
-            Mensaje
+            <p className="text-metlifeBlue">Mensaje</p>
           </label>
           <textarea
             id="message"
@@ -85,7 +85,7 @@ function ContactForm() {
           type="submit"
           className="bg-metlifeGreen text-white py-2 px-4 rounded-lg hover:bg-metlifeDarkBlue transition-colors duration-300"
         >
-          Enviar Mensaje
+          <p className="text-white">Enviar Mensaje</p>
         </button>
       </form>
     </div>

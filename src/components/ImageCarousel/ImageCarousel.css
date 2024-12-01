@@ -1,17 +1,25 @@
-.imgCarous {
-  margin-top: 100px;
-  margin-bottom: 30px;
+.carousel-container {
+  width: 100%;
+  margin: auto;
 }
 
-@media (max-width: 1024px) {
-  .imgCarous {
-    margin-top: 50px;
-  }
+.carousel-image {
+  padding: 10px;
 }
 
-@media (max-width: 768px) {
-  .imgCarous {
-    margin-top: 90px;
-    margin-bottom: 20px;
-  }
+.carousel-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.slick-arrow {
+  display: none;
+}
+
+.slick-prev {
+  display: none;
+}
+
+.slick-next {
+  display: none;
 }

@@ -24,3 +24,6 @@
 .close-modal-btn {
   cursor: pointer;
 }
+.modalText {
+  text-align: center;
+}

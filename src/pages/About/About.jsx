@@ -7,14 +7,14 @@ import "./About.css";
 
 function About() {
   return (
-    <>
+    <div className="aboutBody">
       <div className="about-grid-container py-12">
         <div className="about-text">
           <h2 className="font-bold mb-4">
-            Denko Swoboda - Abogado Consultor en Seguros
+            Denko Swoboda - Magister en Seguros
           </h2>
           <p className="leading-relaxed mb-4">
-            Bienvenido a mi página web! Soy Denko Swoboda, abogado graduado de
+           Soy Denko Swoboda, abogado graduado de
             la Universidad de Cartagena, especializado en Derecho Administrativo
             con una maestría en Seguros y más de 14 años de experiencia. Mi
             práctica profesional abarca tanto la asesoría legal en seguros como
@@ -22,9 +22,6 @@ function About() {
             proporcionar seguridad y tranquilidad a mis clientes.
           </p>
           <p className="leading-relaxed mb-4">
-            Desde la elaboración de pólizas personalizadas hasta la resolución
-            de conflictos legales, ofrezco un enfoque integral para asegurar que
-            mis clientes se sientan respaldados en cada paso del camino.
             Entiendo que cada situación es única, por lo que adapto mis
             servicios a las necesidades específicas de cada persona, brindando
             un enfoque cercano y efectivo.
@@ -38,13 +35,13 @@ function About() {
           <img
             src={img1}
             alt="Denko Swoboda"
-            className="profile-img rounded-lg shadow-lg"
+            className="profile-img"
           />
         </div>
       </div>
-      <div className="cta-section bg-metlifeGreen text-white  text-center">
+      <div className="cta-section bg-metlifeGreen  text-center">
         <h3 className="font-bold mb-4">¿Listo para proteger tu futuro?</h3>
-        <p className="mb-6">
+        <p className="mb-6 text-white">
           Estoy aquí para guiarte en cada paso de tu planificación financiera y
           legal. Juntos podemos crear estrategias efectivas que garanticen la
           seguridad de tu familia y tu patrimonio.
@@ -57,7 +54,7 @@ function About() {
       <div className="image-carousel">
         <ImageCarousel />
       </div>
-    </>
+    </div>
   );
 }
 
