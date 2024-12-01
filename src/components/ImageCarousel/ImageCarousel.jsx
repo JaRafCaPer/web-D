@@ -1,12 +1,12 @@
-import React, { useState, useRef } from 'react';
-import img1 from '../../assets/images/FJPL0371.jpg';
-import img2 from '../../assets/images/FJPL0374.jpg';
-import img3 from '../../assets/images/FJPL0410.jpg';
-import img4 from '../../assets/images/FJPL0485.jpg';
-import img5 from '../../assets/images/FJPL0465.jpg';
-import img6 from '../../assets/images/FJPL0549.jpg';
-import img7 from '../../assets/images/FJPL0573.jpg';
-import './ImageCarousel.css';
+import React, { useState, useRef } from "react";
+import img1 from "../../assets/images/FJPL0371.jpg";
+import img2 from "../../assets/images/FJPL0374.jpg";
+import img3 from "../../assets/images/FJPL0410.jpg";
+import img4 from "../../assets/images/FJPL0485.jpg";
+import img5 from "../../assets/images/FJPL0465.jpg";
+import img6 from "../../assets/images/FJPL0549.jpg";
+import img7 from "../../assets/images/FJPL0573.jpg";
+import "./ImageCarousel.css";
 
 function ImageCarousel() {
   const images = [img1, img2, img3, img4, img5, img6, img7];
@@ -18,7 +18,9 @@ function ImageCarousel() {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length,
+    );
   };
 
   const handleTouchStart = (e) => {
@@ -51,18 +53,16 @@ function ImageCarousel() {
       >
         {images.map((image, index) => (
           <div
-          className="w-full md:w-1/2 flex-shrink-0 px-2 transition-transform transform ease-in-out duration-300"
-          key={index}
-          style={{ flexBasis: `${100 / images.length}%` }} // Ensure each image gets equal width
-        >
-          <img
-            src={image}
-            alt={`Slide ${index}`}
-            className="w-full h-full object-contain"
-          />
-          
-        </div>
-          
+            className="w-full md:w-1/2 flex-shrink-0 px-2 transition-transform transform ease-in-out duration-300"
+            key={index}
+            style={{ flexBasis: `${100 / images.length}%` }} // Ensure each image gets equal width
+          >
+            <img
+              src={image}
+              alt={`Slide ${index}`}
+              className="w-full h-full object-contain"
+            />
+          </div>
         ))}
       </div>
       <button

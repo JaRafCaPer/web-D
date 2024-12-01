@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100">
+  <defs>
+    <pattern id="shieldHeartPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 15 5 L 10 10 L 5 5 Z" fill="#bbb" />
+      <path d="M 10 8 Q 8 2 5 5 Q 2 8 5 12 Q 8 15 10 8 Z" fill="#f28b82" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#shieldHeartPattern)" />
+</svg>

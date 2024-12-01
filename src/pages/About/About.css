@@ -5,7 +5,6 @@
   align-items: start;
   margin: 5%;
   width: 100%;
-
 }
 
 .about-text {
@@ -32,7 +31,7 @@
 .about-container {
   max-width: auto;
   margin: 0 auto;
-  
+
   text-align: center;
 }
 
@@ -44,12 +43,10 @@
 }
 
 h2 {
-
   margin-bottom: 20px;
 }
 
 p {
-
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -62,7 +59,7 @@ p {
   justify-content: center;
   padding: 20px 0;
   margin: 0 auto;
-  border-radius:  10px;
+  border-radius: 10px;
 }
 
 .values-section h3,
@@ -72,7 +69,6 @@ p {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
 }
 .image-carousel {
   margin: 0 10%;
@@ -83,7 +79,6 @@ p {
     grid-template-columns: 1fr;
     align-items: center;
     margin: 0%;
-
   }
 
   .about-text {
@@ -101,9 +96,11 @@ p {
     grid-template-columns: 1fr;
   }
 
-  h2 {}
+  h2 {
+  }
 
-  p {}
+  p {
+  }
 
   .cta-section {
     margin: 0%;

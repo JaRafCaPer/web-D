@@ -2,37 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  font-family: 'Noto Sans', sans-serif;
-  
+  font-family: "Noto Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans", sans-serif;
   color: #0060a2;
 }
 .title {
-  font-size: 3rem; 
+  font-size: 4rem;
 }
 h1 {
-  font-size: 2.75rem;
+  font-size: 3.5rem;
   text-align: center;
 }
 h2 {
-  font-size: 2.25rem;
+  font-size: 3.15rem;
 }
 h3 {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 p {
-  font-family: 'Noto Sans Serif', serif;
+  font-family: "Noto Sans Serif", serif;
   color: #000000;
-  font-size: 1.25rem;
-  line-height: 1.6; 
+  font-size: 1.5625rem;
+  line-height: 1.6;
   text-align: justify;
 }
 
@@ -53,34 +56,33 @@ p {
     font-size: 1.25rem;
   }
   p {
-    font-family: 'Noto Sans Serif', serif;
+    font-family: "Noto Sans Serif", serif;
     color: #000000;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
     line-height: 1.5;
   }
 }
 
 @media (max-width: 768px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h1 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
   h2 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   h4 {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
   }
   p {
-    font-family: 'Noto Sans Serif', serif;
+    font-family: "Noto Sans Serif", serif;
     color: #000000;
-    font-size: 1.18rem; 
+    font-size: 1.1875rem;
     line-height: 1.4;
   }
 }
-

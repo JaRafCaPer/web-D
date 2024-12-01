@@ -1,75 +1,74 @@
 .parents {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
 }
 
 .div1s {
-    color: #01356B;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2.5%;
-    
+  color: #01356b;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5%;
 }
 
 .div1s h1 {
-    margin: 0 0 10% 0;
+  margin: 0 0 10% 0;
 }
 
 .div1s p {
-    margin-left: 15%;
-    margin-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .div2s {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #00B0DD;
-    height: 100%;
-    box-shadow: #A3D043 0px 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #00b0dd;
+  height: 100%;
+  box-shadow: #a3d043 0px 0px 5px;
 }
 
 .img1s {
-    width: 100%;
-    height: 88vh;
-    object-fit: cover;
-    max-width: 400px;
-    transform: scale(1.2);
-    transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 88vh;
+  object-fit: cover;
+  max-width: 400px;
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
 }
 
 .img1s:hover {
-    transform: scale(1.4);
+  transform: scale(1.4);
 }
 
 @media (max-width: 768px) {
-    .parents {
-        flex-direction: column;
-        height: auto;
-    }
+  .parents {
+    flex-direction: column;
+    height: auto;
+  }
 
-    .div1s,
-    .div2s {
-        padding: 20px;
-        text-align: center;
-        height: auto;
-        margin: 4%;
-    }
-    .div1s p {
-        margin-left: 0;
-        margin-right: 0;
-    }
+  .div1s,
+  .div2s {
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    margin: 4%;
+  }
+  .div1s p {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    .img1s {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-    }
+  .img1s {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
 }

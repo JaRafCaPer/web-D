@@ -1,43 +1,70 @@
-import React from 'react';
-import './Home.css';
-import HeroSection from '../../components/HeroSection/HeroSection';
-import TestimonialCarousel from '../../components/Testimonial/TestimonialReel.jsx';
-import denkoImage from '../../assets/images/armCrossed.png'; 
-import familyImage from '../../assets/images/pexels-liam-anderson-411198-2120220.jpg';
-import Form from '../../components/Form/ContactForm';
-import ServicesCards from '../../components/ServicesCards/ServicesCards';
-
-
+import React, { useEffect } from "react";
+import "./Home.css";
+import HeroSection from "../../components/HeroSection/HeroSection";
+import TestimonialCarousel from "../../components/Testimonial/TestimonialReel.jsx";
+import denkoImage from "../../assets/images/armCrossed.png";
+import familyImage from "../../assets/images/pexels-liam-anderson-411198-2120220.jpg";
+import Form from "../../components/Form/ContactForm";
+import ServicesCards from "../../components/ServicesCards/ServicesCards";
 
 function Home() {
+  const instagramEmbedCode = `
+    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/CyDwZYVAYo3/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+      <div class="instPost"> 
+        <a href="https://www.instagram.com/reel/CyDwZYVAYo3/?utm_source=ig_embed&amp;utm_campaign=loading" className="instA"  target="_blank"> 
+        </a>
+      </div>
+    </blockquote>
+  `;
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "//www.instagram.com/embed.js";
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      if (window.instgrm) {
+        window.instgrm.Embeds.process();
+      }
+    };
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <>
       <div className="parent">
         <div className="div1">
-            <div>
-            <h1>¡Bienvenido a mi página web!<br/><br/></h1>
-          <p>
-            Soy Denko Swoboda, abogado especializado en Derecho Administrativo con una maestría en Seguros y 14 años de experiencia en el sector. Actualmente, formo parte de la gerencia comercial de MetLife, donde me dedico a proteger el bienestar de las familias a través de asesoría en seguros y planeación patrimonial.<br/><br/>
-            Mis servicios incluyen asesoría legal en seguros, estrategias para asegurar el futuro financiero y consultoría personalizada, siempre con un enfoque humano y empático.<br/><br/>
-            ¡Contáctame para una consulta personalizada!<br/><br/>
-            Gracias por visitar mi página. Estoy aquí para ayudarte a asegurar un futuro más seguro y tranquilo.
-          </p>
+          <div className="InDiv1">
+            <h1>
+              ¡Tu Tranquilidad, Mi compromiso!
+              <br />
+              <br />
+            </h1>
+            <div className="instagram-embed" dangerouslySetInnerHTML={{ __html: instagramEmbedCode }} />
           </div>
         </div>
         <div className="div2">
-          <img src={denkoImage} alt="Denko Swoboda" className="w-full h-full object-contain" />
+          <img
+            src={denkoImage}
+            alt="Denko Swoboda"
+            className="w-full h-full object-contain"
+          />
         </div>
       </div>
-      <HeroSection />
-      <ServicesCards/>
-      <TestimonialCarousel />
       <div className="div3">
-        <div className='subDiv3'>
-        <img src={familyImage} alt="" />
-        <p className='pieFoto'>Foto de Liam Anderson</p>
+        <div className="subDiv3">
+          <img src={familyImage} alt="" />
+          <p className="pieFoto">Foto de Liam Anderson</p>
         </div>
         <Form className="Formulario" />
-      </div> 
+      </div>
+      <HeroSection />
+
+      <ServicesCards />
     </>
   );
 }

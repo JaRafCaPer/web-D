@@ -1,10 +1,10 @@
 .hero {
-    overflow-x: hidden; /* Prevents horizontal overflow */
-    height: 300px;
+  overflow-x: hidden; /* Prevents horizontal overflow */
+  height: 300px;
 }
 .btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
