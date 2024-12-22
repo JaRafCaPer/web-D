@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
   faInstagram,
   faLinkedinIn,
@@ -26,24 +27,24 @@ function Footer() {
           <h3 className="text-lg text-metlifeBlue font-bold mb-4">Navegación</h3>
           <ul>
             <li>
-              <a href="/" className="fA text-metlifeBlue hover:text-metlifeGreen">
+              <Link to="/" className="fA text-metlifeBlue hover:text-metlifeGreen">
                 Inicio
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="fA text-metlifeBlue hover:text-metlifeGreen">
+              <Link to="/about" className="fA text-metlifeBlue hover:text-metlifeGreen">
                 Nosotros
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/services" className="fA text-metlifeBlue hover:text-metlifeGreen">
+              <Link to="/services" className="fA text-metlifeBlue hover:text-metlifeGreen">
                 Servicios
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="fA text-metlifeBlue hover:text-metlifeGreen">
+              <Link to="/contact" className="fA text-metlifeBlue hover:text-metlifeGreen">
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
