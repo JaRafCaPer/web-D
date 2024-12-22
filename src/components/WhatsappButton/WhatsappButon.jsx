@@ -16,7 +16,7 @@ function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FontAwesomeIcon icon={faWhatsapp} size="3x" />
+      <FontAwesomeIcon icon={faWhatsapp} size="2x" />
     </a>
   );
 }

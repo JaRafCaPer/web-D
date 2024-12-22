@@ -9,9 +9,9 @@ import ServicesCards from "../../components/ServicesCards/ServicesCards";
 
 function Home() {
   const instagramEmbedCode = `
-    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/CyDwZYVAYo3/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C2Pj7hYgaOW/?igsh=MTZ5bGpmaWZscG9uMA==" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:640px; min-width:426px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
       <div class="instPost"> 
-        <a href="https://www.instagram.com/reel/CyDwZYVAYo3/?utm_source=ig_embed&amp;utm_campaign=loading" className="instA"  target="_blank"> 
+        <a href="https://www.instagram.com/p/C2Pj7hYgaOW/?igsh=MTZ5bGpmaWZscG9uMA==" className="instA"  target="_blank"> 
         </a>
       </div>
     </blockquote>
