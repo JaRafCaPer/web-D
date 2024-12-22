@@ -1,4 +1,155 @@
-.title {
-  font-weight: 400;
-  font-style: italic;
+.navbar {
+  background-color: #fff;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+li {
+  list-style: none;
+  display: inline-block;
+ margin: 15px;
+ border-radius: 20px;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 24px;
+}
+.menu-icon {
+  display: none;
+  color: #0060A2;
+}
+.navbar-logo {
+  color: #000;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 450px; /* Ajusta el tamaño del logo según sea necesario */
+  width: auto;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+.nav-links {
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.nav-links:hover {
+  color: #00a3e0; /* Cambia el color al pasar el ratón */
+}
+
+/* Estilos para tablet */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0 16px;
+  }
+
+  .logo-img {
+    height: 45px; /* Ajusta el tamaño del logo para tablet */
+  }
+
+  .nav-links {
+    padding: 0 0.8rem;
+  }
+}
+
+/* Estilos para móvil */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    
+  }
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    margin: 20px 10%;
+   
+  }
+
+  .menu-icon {
+    display: block;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%, 50%);
+    font-size: 2rem;
+    cursor: pointer;
+    align-items: center;
+    
+    z-index: 2;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #fff;
+  }
+
+  .nav-menu.active {
+    background: #fff;
+    margin: 0;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    height: 350px;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-links {
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    display: table;
+  }
+
+  .logo-img {
+    height: 300px; /* Ajusta el tamaño del logo para móvil */
+    width: auto ;
+  }
+  li {
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 0;
+  }
 }

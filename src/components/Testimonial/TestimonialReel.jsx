@@ -1,116 +1,115 @@
 import React, { useState } from "react";
-import img1 from "../../assets/images/FJPL0371.jpg";
-import img2 from "../../assets/images/FJPL0374.jpg";
-import img3 from "../../assets/images/FJPL0410.jpg";
-import img4 from "../../assets/images/photo4.jpg";
-import img5 from "../../assets/images/FJPL0465.jpg";
-import img6 from "../../assets/images/FJPL0549.jpg";
-import img7 from "../../assets/images/FJPL0573.jpg";
 import "./TestimonialReel.css";
 
-function TestimonialCarousel() {
-  const testimonials = [
-    {
-      name: "Carlos Gómez",
-      photo: img1,
-      feedback: "Denko Swoboda me ayudó a proteger a mi familia.",
-    },
-    {
-      name: "Ana Martínez",
-      photo: img2,
-      feedback: "La tranquilidad que obtuve con Denko Swoboda es invaluable.",
-    },
-    {
-      name: "Juan Rodríguez",
-      photo: img3,
-      feedback: "Denko Swoboda me ofreció las mejores soluciones.",
-    },
-    {
-      name: "María Fernández",
-      photo: img4,
-      feedback: "Con Denko Swoboda, siento que mi futuro está asegurado.",
-    },
-    {
-      name: "Pedro López",
-      photo: img5,
-      feedback:
-        "Gracias a Denko Swoboda, planifiqué mi jubilación con confianza.",
-    },
-    {
-      name: "Lucía Ramírez",
-      photo: img6,
-      feedback: "La asesoría personalizada de Denko Swoboda fue increíble.",
-    },
-    {
-      name: "Roberto Sánchez",
-      photo: img7,
-      feedback: "Denko Swoboda superó todas mis expectativas.",
-    },
-  ];
+const testimonials = [
+  {
+    name: "Pedro López",
+    feedback: "Gracias a Denko Swoboda, planifiqué mi jubilación con confianza.",
+    rating: 5,
+  },
+  {
+    name: "Lucía Ramírez",
+    feedback: "La asesoría personalizada de Denko Swoboda fue increíble.",
+    rating: 4,
+  },
+  {
+    name: "Roberto Sánchez",
+    feedback: "Denko Swoboda superó todas mis expectativas.",
+    rating: 5,
+  },
+  {
+    name: "Ana María",
+    feedback: "Excelente servicio y atención al cliente.",
+    rating: 4,
+  },
+  {
+    name: "Carlos Pérez",
+    feedback: "Muy profesional y atento a los detalles.",
+    rating: 5,
+  },
+  {
+    name: "María Fernández",
+    feedback: "Recomiendo a Denko Swoboda sin dudarlo.",
+    rating: 5,
+  },
+  {
+    name: "Jorge Martínez",
+    feedback: "Denko Swoboda me ayudó a entender mejor mis opciones de seguro.",
+    rating: 4,
+  },
+  {
+    name: "Sofía Gómez",
+    feedback: "Muy satisfecho con el servicio recibido.",
+    rating: 5,
+  },
+  {
+    name: "Andrés Torres",
+    feedback: "Denko Swoboda es un profesional muy competente.",
+    rating: 5,
+  },
+  {
+    name: "Laura Castillo",
+    feedback: "La atención al cliente fue excelente.",
+    rating: 4,
+  },
+  {
+    name: "Fernando Ruiz",
+    feedback: "Recomiendo a Denko Swoboda por su profesionalismo.",
+    rating: 5,
+  },
+  {
+    name: "Isabel Morales",
+    feedback: "Muy contenta con los resultados obtenidos.",
+    rating: 5,
+  },
+];
 
+function TestimonialReel() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+    setCurrentSlide((prev) => (prev + 3) % testimonials.length);
   };
 
   const prevSlide = () => {
     setCurrentSlide(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
+      (prev) => (prev - 3 + testimonials.length) % testimonials.length
     );
   };
 
+  const renderStars = (rating) => {
+    return Array(rating)
+      .fill()
+      .map((_, index) => (
+        <span key={index} className="star">
+          &#9733;
+        </span>
+      ));
+  };
+
   return (
-    <div className="carousel bg-metlifeBlue">
+    <div className="carousel slide">
       <div className="carousel-inner">
-        <div className="testimonial-slide">
-          <img
-            src={testimonials[currentSlide].photo}
-            alt={testimonials[currentSlide].name}
-            className="testimonial-img"
-          />
-          <h3 className="testName">{testimonials[currentSlide].name}</h3>
-          <p className="testP">{testimonials[currentSlide].feedback}</p>
-        </div>
-
-        {/* Render next two slides with boundary checks */}
-        <div className="testimonial-slide2">
-          <img
-            src={testimonials[(currentSlide + 1) % testimonials.length].photo}
-            alt={testimonials[(currentSlide + 1) % testimonials.length].name}
-            className="testimonial-img"
-          />
-          <h3 className="testName">
-            {testimonials[(currentSlide + 1) % testimonials.length].name}
-          </h3>
-          <p className="testP">
-            {testimonials[(currentSlide + 1) % testimonials.length].feedback}
-          </p>
-        </div>
-
-        <div className="testimonial-slide2">
-          <img
-            src={testimonials[(currentSlide + 2) % testimonials.length].photo}
-            alt={testimonials[(currentSlide + 2) % testimonials.length].name}
-            className="testimonial-img"
-          />
-          <h3 className="testName">
-            {testimonials[(currentSlide + 2) % testimonials.length].name}
-          </h3>
-          <p className="testP">
-            {testimonials[(currentSlide + 2) % testimonials.length].feedback}
-          </p>
-        </div>
+        {testimonials.slice(currentSlide, currentSlide + 3).map((testimonial, index) => (
+          <div className="testimonial-slide" key={index}>
+            <p className="testimonial-feedback">
+              "{testimonial.feedback}"
+            </p>
+            <div className="testimonial-rating">
+              {renderStars(testimonial.rating)}
+            </div>
+            <p className="testimonial-name">- {testimonial.name}</p>
+          </div>
+        ))}
       </div>
-
-      <button onClick={prevSlide} className="carousel-btn left">
-        ❮
+      <button className="carousel-button prev" onClick={prevSlide}>
+        &#10094;
       </button>
-      <button onClick={nextSlide} className="carousel-btn right">
-        ❯
+      <button className="carousel-button next" onClick={nextSlide}>
+        &#10095;
       </button>
     </div>
   );
 }
 
-export default TestimonialCarousel;
+export default TestimonialReel;

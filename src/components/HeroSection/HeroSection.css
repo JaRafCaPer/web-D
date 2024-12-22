@@ -1,6 +1,14 @@
 .hero {
   overflow-x: hidden; /* Prevents horizontal overflow */
-  height: 300px;
+  height: 350px;
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
 }
 .btns {
   display: flex;

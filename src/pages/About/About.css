@@ -1,31 +1,32 @@
 .aboutBody {
-  background-image: url("../../assets/images/texture.svg");
+  
   
 }
 
 .about-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-direction: row;
   grid-template-rows: auto;
   align-items: start;
-  margin: 2%;
-  width: 100%;
+  margin: 5% 12%;
+  width: 80%;
   
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
-  margin: 0% 8vw;
-  width: 35vw;
+  margin: 5vw;
+  width: 25vw;
 }
 
 .about-image {
-  
+  max-width: 700px;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  margin: 0 5vw;
+  width: 60%;
+  margin: 0 6vw;
+  object-fit: contain;
 }
 
 
@@ -37,7 +38,7 @@
 
 .profile-img {
   width: 50vw;
-  max-width: 500px;
+  max-width: 750px;
   height: auto;
   margin: 0 ;
 }
@@ -83,9 +84,10 @@ p {
 
 @media (max-width: 768px) {
   .about-grid-container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     align-items: center;
-    margin: 0%;
+    margin: 0;
+    width: auto;
   }
 
   .about-text {
@@ -119,6 +121,7 @@ p {
     text-align: center;
     width: 100%;
     padding: 0%;
+    height: 250px;
 
   }
 

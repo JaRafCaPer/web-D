@@ -26,22 +26,22 @@ function Footer() {
           <h3 className="text-lg text-metlifeBlue font-bold mb-4">Navegación</h3>
           <ul>
             <li>
-              <a href="/" className="hover:text-metlifeGreen">
+              <a href="/" className="fA text-metlifeBlue hover:text-metlifeGreen">
                 Inicio
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:text-metlifeGreen">
+              <a href="/about" className="fA text-metlifeBlue hover:text-metlifeGreen">
                 Nosotros
               </a>
             </li>
             <li>
-              <a href="/services" className="hover:text-metlifeGreen">
+              <a href="/services" className="fA text-metlifeBlue hover:text-metlifeGreen">
                 Servicios
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-metlifeGreen">
+              <a href="/contact" className="fA text-metlifeBlue hover:text-metlifeGreen">
                 Contacto
               </a>
             </li>

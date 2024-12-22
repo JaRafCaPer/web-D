@@ -1,84 +1,42 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/images/Logo2.png"; // Asegúrate de que la ruta sea correcta
 import "./Navbar.css";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
   return (
-    <>
-      <nav className="navBar1 bg-white shadow-lg  w-full z-50">
-        <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-8">
-          <Link to="/" className="title text-metlifeBlue">
-            Denko Swoboda{" "}
-          </Link>
-          <button
-            className=" text-metlifeBlue text-3xl md:text-4xl"
-            onClick={() => setIsMenuOpen(true)}
-          >
-            ☰
-          </button>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img src={Logo} alt="Denko Swoboda Logo" className="logo-img" />
+        </Link>
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-      </nav>
-
-      {isMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
-          onClick={() => setIsMenuOpen(false)}
-        ></div>
-      )}
-
-      <div
-        className={`fixed top-0 left-0 h-full bg-white shadow-lg z-50 transform ${
-          isMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out w-1/2 md:w-1/3`}
-      >
-        <button
-          className="text-right p-4 text-metlifeBlue font-bold"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          ✖
-        </button>
-        <ul className="flex flex-col items-start p-4 space-y-4">
-          <li>
-            <Link
-              to="/"
-              className="text-xl text-gray-700 hover:text-metlifeBlue"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Inicio
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+              Sobre mí
             </Link>
           </li>
-          <li>
-            <Link
-              to="/about"
-              className="text-xl text-gray-700 hover:text-metlifeBlue"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Sobre Mí
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/services"
-              className="text-xl text-gray-700 hover:text-metlifeBlue"
-              onClick={() => setIsMenuOpen(false)}
-            >
+          <li className="nav-item">
+            <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
               Servicios
             </Link>
           </li>
-          <li>
-            <Link
-              to="/contact"
-              className="text-xl text-gray-700 hover:text-metlifeBlue"
-              onClick={() => setIsMenuOpen(false)}
-            >
+          <li className="nav-item">
+            <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
               Contacto
             </Link>
           </li>
         </ul>
       </div>
-    </>
+    </nav>
   );
 }
 
