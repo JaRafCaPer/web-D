@@ -41,9 +41,8 @@ function Home() {
           <div className="InDiv1">
             <h1>
               ¡Tu Tranquilidad, Mi compromiso!
-              <br />
-              <br />
             </h1>
+            
             <div className="instagram-embed" dangerouslySetInnerHTML={{ __html: instagramEmbedCode }} />
           </div>
         </div>
@@ -55,6 +54,7 @@ function Home() {
           />
         </div>
       </div>
+      <HeroSection />
       <div className="div3">
         <div className="subDiv3">
           <img src={familyImage} alt="" />
@@ -62,7 +62,6 @@ function Home() {
         </div>
         <Form className="Formulario" />
       </div>
-      <HeroSection />
       <ServicesCards />
     </>
   );
