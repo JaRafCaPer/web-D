@@ -1,18 +1,26 @@
 @import 'aos/dist/aos.css';
 
-.parallax {
+/* Fondo dinámico */
+.dynamic-background {
   background-image: url('../../assets/images/FJPL0567.jpg');
-  min-height: 850px;
-  background-attachment: fixed;
-  background-position: 0% 5%;
+  height: 950px;
+  background-position: 0 30%;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  transform: translateY(0);
+  transition: transform 0.6s ease-out;
 }
+
 
 .content {
   background-color: white;
-  padding: 20px;
-  
+  padding: 10px;
+  margin-top: 750px; 
 }
 
 .parent {
@@ -50,13 +58,10 @@
   align-items: center;
   margin-top: 20px;
 }
+
 .subDiv3 {
   flex: 1;
   margin: 10px;
-}
-
-
-.subDiv3 {
   align-items: center;
   justify-items: center;
 }
@@ -106,11 +111,11 @@
 
 /* Estilos para móvil */
 @media (max-width: 768px) {
-  .parallax {
-    min-height: 500px;
-    background-position: 50% 10%;
-    background-size: cover;
+  .dynamic-background {
+    height: 500px;
+    background-position: center;
   }
+
   .parent {
     flex-direction: column;
     align-items: center;
