@@ -7,6 +7,7 @@ import {
   faGoogle,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import "./Footer.css";
 
 function Footer() {
   return (

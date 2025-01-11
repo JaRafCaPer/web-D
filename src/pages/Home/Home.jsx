@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./Home.css";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import TestimonialCarousel from "../../components/Testimonial/TestimonialReel.jsx";
@@ -18,6 +20,11 @@ function Home() {
   `;
 
   useEffect(() => {
+    AOS.init({
+      duration: 2200,
+      
+    });
+
     const script = document.createElement("script");
     script.async = true;
     script.src = "//www.instagram.com/embed.js";
@@ -36,33 +43,36 @@ function Home() {
 
   return (
     <>
-      <div className="parent">
-        <div className="div1">
-          <div className="InDiv1">
-            <h1>
-              ¡Tu Tranquilidad, Mi compromiso!
-            </h1>
-            
-            <div className="instagram-embed" dangerouslySetInnerHTML={{ __html: instagramEmbedCode }} />
+      <div className="parallax"></div>
+      <div className="content">
+        <div className="parent">
+          <div className="div1" data-aos="fade-up">
+            <div className="InDiv1">
+              <h1>
+                ¡Tu Tranquilidad, Mi compromiso!
+              </h1>
+              
+              <div className="instagram-embed" dangerouslySetInnerHTML={{ __html: instagramEmbedCode }} />
+            </div>
+          </div>
+          <div className="div2" data-aos="fade-right">
+            <img
+              src={denkoImage}
+              alt="Denko Swoboda"
+              className="denkoImage"
+            />
           </div>
         </div>
-        <div className="div2">
-          <img
-            src={denkoImage}
-            alt="Denko Swoboda"
-            className="w-full h-full object-contain"
-          />
+        <HeroSection  />
+        <div className="div3" data-aos="fade-down">
+          <div className="subDiv3">
+            <img src={familyImage} alt="" />
+            <p className="pieFoto">Foto de Liam Anderson</p>
+          </div>
+          <Form className="formulario" />
         </div>
+        <ServicesCards />
       </div>
-      <HeroSection />
-      <div className="div3">
-        <div className="subDiv3">
-          <img src={familyImage} alt="" />
-          <p className="pieFoto">Foto de Liam Anderson</p>
-        </div>
-        <Form className="Formulario" />
-      </div>
-      <ServicesCards />
     </>
   );
 }

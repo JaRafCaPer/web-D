@@ -1,36 +1,52 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/Logo2.png"; // Asegúrate de que la ruta sea correcta
+import { slide as Menu } from "react-burger-menu";
+import Logo from "../../assets/images/denko/denko2.png"; 
 import "./Navbar.css";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const handleStateChange = (state) => {
+    setMenuOpen(state.isOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+        <Link to="/" className="navbar-logo" onClick={closeMenu}>
           <img src={Logo} alt="Denko Swoboda Logo" className="logo-img" />
         </Link>
-        <div className="menu-icon" onClick={handleClick}>
-          <i className={click ? "fas fa-times" : "fas fa-bars"} />
+        <div className="menu-icon">
+          <Menu right isOpen={menuOpen} onStateChange={handleStateChange}>
+            <Link to="/about" className="menu-item" onClick={closeMenu}>
+              Sobre mí
+            </Link>
+            <Link to="/services" className="menu-item" onClick={closeMenu}>
+              Servicios
+            </Link>
+            <Link to="/contact" className="menu-item" onClick={closeMenu}>
+              Contacto
+            </Link>
+          </Menu>
         </div>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <ul className="nav-menu">
           <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/about" className="nav-links">
               Sobre mí
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/services" className="nav-links">
               Servicios
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/contact" className="nav-links">
               Contacto
             </Link>
           </li>

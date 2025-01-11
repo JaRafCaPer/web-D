@@ -1,7 +1,6 @@
-.aboutBody {
-  
-  
-}
+@import 'aos/dist/aos.css';
+
+
 
 .about-grid-container {
   display: flex;
@@ -10,7 +9,6 @@
   align-items: start;
   margin: 5% 12%;
   width: 80%;
-  
 }
 
 .about-text {
@@ -29,7 +27,6 @@
   object-fit: contain;
 }
 
-
 .about-container {
   max-width: auto;
   margin: 0 auto;
@@ -40,7 +37,7 @@
   width: 50vw;
   max-width: 750px;
   height: auto;
-  margin: 0 ;
+  margin: 0;
 }
 
 h2 {
@@ -79,7 +76,7 @@ p {
 }
 
 .image-carousel {
-  margin: 20px 10%; 
+  margin: 20px 10%;
 }
 
 @media (max-width: 768px) {
@@ -100,42 +97,40 @@ p {
     margin: auto;
     width: auto;
   }
-.profile-img {
-  width: 90vw;
-  max-width: 400px;
-  height: auto;
-  
-}
+
+  .profile-img {
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+  }
 
   .values-section {
     align-items: center;
     text-align: center;
     width: 100%;
-}
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
 
   .cta-section {
-    align-items: center;  
+    align-items: center;
     text-align: center;
     width: 100%;
     padding: 0%;
     height: 250px;
-
   }
 
   .icon {
     align-items: center;
     text-align: center;
-
   }
 
   .image-carousel {
     width: 100%;
     height: auto;
     margin: 0;
-    margin-top: 0px ;
+    margin-top: 0px;
   }
-  
 }
