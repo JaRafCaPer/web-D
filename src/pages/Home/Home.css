@@ -3,7 +3,7 @@
 
   position: relative;
   top: 0;
-  z-index: -1000;
+  z-index: -1;
 }
 .parallax {
   background-image: url('../../assets/images/FJPL0567.jpg');
@@ -115,9 +115,11 @@
 /* Estilos para móvil */
 @media (max-width: 768px) {
   .parallax {
-    min-height: 500px;
-    background-position: 50% 10%;
+    min-height: 600px;
+    width: 100vw;
+    background-position: center;
     background-size: cover;
+    transform: scale(1);
   }
   .parent {
     flex-direction: column;
