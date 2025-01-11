@@ -9,9 +9,12 @@
   background-image: url('../../assets/images/FJPL0567.jpg');
   min-height: 850px;
   position: sticky;
-  background-position: 0% 5%;
+  background-position: 0% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  transform: scale (0.5) translateZ(0);
+  transition: opacity 0.42s ease-in-out; 
+  will-change: transform, opacity
 }
 
 .content {
