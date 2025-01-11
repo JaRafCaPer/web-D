@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Modal from "../../components/Modal/Modal";
 import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import ExpertiseCards from "../../components/ExpertiseCards/ExpertiseCards";
 import img1 from "../../assets/images/About.png";
@@ -28,10 +27,6 @@ function About() {
           <p className="leading-relaxed mb-4">
             Entiendo que cada situación es única, por lo que adapto mis servicios a las necesidades específicas de cada persona, brindando un enfoque cercano y efectivo.
           </p>
-          <Modal
-            title="Más Sobre Denko Swoboda"
-            content="Mis servicios no solo abarcan la protección financiera y legal, sino que están diseñados para ofrecer tranquilidad. A través de una planificación cuidadosa, puedes estar seguro de que tu bienestar y el de tu familia están en buenas manos."
-          />
         </div>
         <div className="about-image" >
           <img

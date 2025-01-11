@@ -71,7 +71,9 @@ function Home() {
           </div>
           <Form className="formulario" />
         </div>
+        <div data-aos="fade-right">
         <ServicesCards />
+        </div>
       </div>
     </>
   );
