@@ -1,11 +1,8 @@
 @import 'aos/dist/aos.css';
 
-
-
 .about-grid-container {
   display: flex;
   flex-direction: row;
-  grid-template-rows: auto;
   align-items: start;
   margin: 5% 12%;
   width: 80%;
@@ -38,6 +35,21 @@
   max-width: 750px;
   height: auto;
   margin: 0;
+}
+
+.btn-contact {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #00B0DD;
+  color: #000;
 }
 
 h2 {
@@ -77,6 +89,68 @@ p {
 
 .image-carousel {
   margin: 20px 10%;
+}
+
+@media (max-width: 1024px) {
+  .about-grid-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: auto;
+  }
+
+  .about-text {
+    text-align: center;
+    margin: 5%;
+    width: auto;
+  }
+
+  .about-image {
+    margin: auto;
+    width: auto;
+  }
+
+  .profile-img {
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .values-section {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0%;
+    height: auto;
+  }
+
+  .icon {
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-carousel {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: 0px;
+  }
+
+  .btn-contact {
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -119,7 +193,7 @@ p {
     text-align: center;
     width: 100%;
     padding: 0%;
-    height: 250px;
+    height: 310px;
   }
 
   .icon {
@@ -132,5 +206,11 @@ p {
     height: auto;
     margin: 0;
     margin-top: 0px;
+  }
+
+  .btn-contact {
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 20px;
   }
 }

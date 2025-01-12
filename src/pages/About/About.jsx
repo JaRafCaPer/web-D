@@ -10,7 +10,7 @@ function About() {
   useEffect(() => {
     AOS.init({
       duration: 1200,
-      
+      once: true,
     });
   }, []);
 
@@ -28,7 +28,7 @@ function About() {
             Entiendo que cada situación es única, por lo que adapto mis servicios a las necesidades específicas de cada persona, brindando un enfoque cercano y efectivo.
           </p>
         </div>
-        <div className="about-image" >
+        <div className="about-image" data-aos="fade-up">
           <img
             src={img1}
             alt="Denko Swoboda"
@@ -38,9 +38,15 @@ function About() {
       </div>
       <div className="cta-section bg-metlifeGreen text-center" data-aos="fade-up">
         <h3 className="font-bold mb-4">¿Listo para proteger tu futuro?</h3>
-        <p className="mb-6 text-white">
-          Estoy aquí para guiarte en cada paso de tu planificación financiera y legal. Juntos podemos crear estrategias efectivas que garanticen la seguridad de tu familia y tu patrimonio.
+        <p className="p-cta text-white">
+          Estoy aquí para guiarte en cada paso de tu planificación financiera y legal. Juntos podemos crear estrategias efectivas que garanticen la seguridad de tu familia. Aparta tu asesoria personalizada hoy:
         </p>
+        <a
+          href="/contact"
+          className="btn-contact text-white bg-metlifeDarkBlue"
+        >
+          Contáctame
+        </a>
       </div>
       <div className="values-section py-12 text-center" data-aos="fade-up">
         <h3 className="font-bold mb-4">Áreas de Expertise</h3>

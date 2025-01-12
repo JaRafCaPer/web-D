@@ -22,34 +22,34 @@ function Home() {
     AOS.init({
       duration: 2200,
     });
-  
+
     const script = document.createElement("script");
     script.async = true;
     script.src = "//www.instagram.com/embed.js";
     document.body.appendChild(script);
-  
+
     script.onload = () => {
       if (window.instgrm) {
         window.instgrm.Embeds.process();
       }
     };
-  
+
     const handleScroll = () => {
       const parallax = document.querySelector(".parallax");
       const scrollTop = window.scrollY; 
       const windowHeight = window.innerHeight; 
-      const scaleValue = 1 + scrollTop / (2 * windowHeight); 
-      parallax.style.transform = `scale(${scaleValue}) translateY(${scrollTop * 0.2}px)`;
+      parallax.style.transform = `translateY(${scrollTop * 0.3}px)`;
       const opacityValue = 1 - scrollTop / windowHeight;
       parallax.style.opacity = opacityValue > 0 ? opacityValue : 0;
     };
     window.addEventListener("scroll", handleScroll);
-  
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.body.removeChild(script);
     };
   }, []);
+
   return (
     <>
       <div className="sticky">

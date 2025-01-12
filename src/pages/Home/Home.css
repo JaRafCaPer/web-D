@@ -1,26 +1,25 @@
 @import 'aos/dist/aos.css';
-.sticky {
 
-  position: relative;
-  top: 0;
-  z-index: -1;
-}
 .parallax {
   background-image: url('../../assets/images/FJPL0567.jpg');
   min-height: 850px;
-  position: sticky;
-  background-position: 0% 50%;
+  background-position: 10% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  transform: scale (0.5) translateZ(0);
-  transition: opacity 0.42s ease-in-out; 
-  will-change: transform, opacity
+  transform: translateZ(0);
+  transition: opacity 0.25s ease-in-out; 
+  will-change: transform, opacity;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: -1; 
 }
 
 .content {
   background-color: white;
   padding: 20px;
-  
 }
 
 .parent {
@@ -58,15 +57,10 @@
   align-items: center;
   margin-top: 20px;
 }
+
 .subDiv3 {
   flex: 1;
-  margin: 10px;
-}
-
-
-.subDiv3 {
-  align-items: center;
-  justify-items: center;
+  text-align: center;
 }
 
 .pieFoto {
@@ -116,11 +110,12 @@
 @media (max-width: 768px) {
   .parallax {
     min-height: 600px;
-    width: 100vw;
     background-position: center;
     background-size: cover;
-    transform: scale(1);
+    
+    
   }
+
   .parent {
     flex-direction: column;
     align-items: center;
