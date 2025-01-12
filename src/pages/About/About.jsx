@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ImageCarousel from "../../components/ImageCarousel/ImageCarousel";
 import ExpertiseCards from "../../components/ExpertiseCards/ExpertiseCards";
-import img1 from "../../assets/images/About.png";
+import img1 from "../../assets/images/About-CISRPVdC.webp";
 import "./About.css";
 
 function About() {

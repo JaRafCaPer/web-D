@@ -3,8 +3,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./Home.css";
 import HeroSection from "../../components/HeroSection/HeroSection";
-import denkoImage from "../../assets/images/armCrossed.png";
-import familyImage from "../../assets/images/pexels-liam-anderson-411198-2120220.jpg";
+import denkoImage from "../../assets/images/armCrossed-WE9fZI57.webp";
+import familyImage from "../../assets/images/pexels-liam-anderson-411198-2120220-D6sV3_fR.webp";
 import Form from "../../components/Form/ContactForm";
 import ServicesCards from "../../components/ServicesCards/ServicesCards";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "../../components/Form/ContactForm";
 import Socials from "../../components/Socials/Socials";
-import familyImage from "../../assets/images/pexels-liam-anderson-411198-2120220.jpg";
+import familyImage from "../../assets/images/pexels-liam-anderson-411198-2120220-D6sV3_fR.webp";
 import "./Contact.css";
 
 const Contact = () => {

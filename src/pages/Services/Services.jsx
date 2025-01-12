@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./Services.css";
-import img1s from "../../assets/images/walk.png";
+import img1s from "../../assets/images/walk-DGTfnk3x.webp";
 import ServicesCards from "../../components/ServicesCards/ServicesCards";
 import TestimonialCarousel from "../../components/Testimonial/TestimonialReel.jsx";
 
